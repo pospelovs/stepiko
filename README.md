@@ -1,0 +1,2 @@
+# stepiko
+Auto tests course
