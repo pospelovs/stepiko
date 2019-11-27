@@ -24,7 +24,8 @@ try:
     x = x_element.text
     y = calc(x)
 
-    input1 = browser.find_element_by_id("answer").send_keys(y)
+    input1 = browser.find_element_by_id("answer")\
+    input1.send_keys(y)
 
     button2 = browser.find_element_by_id("solve")
     button2.click()
@@ -32,3 +33,4 @@ try:
 finally:
     time.sleep(10)
     browser.quit()
+
